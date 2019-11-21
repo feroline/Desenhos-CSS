@@ -1,0 +1,26 @@
+.coracao {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: 200px;
+    transform: rotate(-45deg);
+    position: relative;
+}
+
+.coracao:before,
+.coracao:after {
+    content: "";
+    width:200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.coracao:before {
+    top: -100px;
+}
+
+.coracao:after {
+    left: 100px;
+}
