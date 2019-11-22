@@ -1,0 +1,175 @@
+.princesaCaroco {
+    width: 200px;
+    height: 200px;
+    margin: 200px;
+    background-color: violet;
+    border-radius: 50%;
+    position: relative;
+}
+
+.caroco1, .caroco2,
+.caroco3, .caroco4,
+.caroco5, .caroco6,
+.caroco7, .caroco8,
+.caroco9, .caroco10 {
+    background-color: violet;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.caroco1,.caroco3,
+.caroco4,.caroco6,
+.caroco8,.caroco10 {
+    border-left: 5px solid darkorchid ;
+}
+
+.caroco1 {
+    width: 140px;
+    height: 140px;
+    top: -70px;
+    left: 30px;
+    /*top: -50px;*/
+}
+
+.caroco2,.caroco3 {
+    width: 120px;
+    height: 120px;
+}
+
+.caroco2 {
+    left: 110px;
+}
+
+.caroco3 {
+    right: 110px;
+}
+
+.caroco4,.caroco5 {
+    width: 130px;
+    height: 130px;
+}
+.caroco4 {
+    top: 70px;
+    right: 110px;
+}
+
+.caroco5 {
+    top: 70px;
+    left: 110px;
+}
+.caroco6, .caroco7 {
+    width: 70px;
+    height: 70px;
+}
+
+.caroco6 {
+    right: 140px ;
+    top: 155px;
+}
+
+.caroco7 {
+    left: 140px ;
+    top: 155px;
+}
+
+.caroco8, .caroco9 {
+    width: 60px;
+    height: 70px;
+    top: 180px;
+}
+
+.caroco8 {
+    right: 120px;
+}
+
+.caroco9 {
+    left: 120px;
+}
+
+.caroco10 {
+    width: 70px;
+    height: 90px;
+    top: 175px;
+    right: 65px;
+}
+
+/*.olho1, .olho2 {*/
+/*    width: 10px;*/
+/*    height: 10px;*/
+/*    background-color: black;*/
+/*    border-radius: 50%;*/
+/*    position: absolute;*/
+/*}*/
+.caroco2:before, .caroco3:before {
+    content: "";
+    width:10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+}
+
+.caroco2:before {
+    right: 90px;
+}
+
+.caroco3:before {
+    left: 90px;
+}
+
+.estrela{
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right: 25px solid transparent;
+    border-bottom: 20px solid yellow;
+    border-left: 29px solid  transparent;
+    transform: rotate(-108deg);
+    position: relative;
+    left: 43px;
+    top: 35px;
+    /* right: 10px; */
+}
+
+.estrela:before {
+    content: "";
+    display: block;   
+    width: 0px;
+    height: 0px;
+    border-right: 25px solid transparent;
+    border-bottom: 20px solid yellow;
+    border-left: 18px solid transparent;
+    position: absolute;
+    right: -18px;
+    bottom: -20px;
+    transform: rotate(-74deg);
+}
+
+.estrela:after {
+    content: "";
+    display: block;   
+    width: 0px;
+    height: 0px;
+    border-right: 25px solid transparent;
+    border-bottom: 20px solid yellow;
+    border-left: 20px solid transparent;
+    position: absolute;
+    right: -17px;
+    bottom: -20px;
+    transform: rotate(-145deg);
+}
+
+.princesaCaroco:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 10px;
+    /* border-top: 10px solid transparent; */
+    /* border-bottom: 10px solid black; */
+    border-radius: 50%;
+    background-color: black ;
+    position: absolute;
+    top: 70px;
+    right: 85px;
+}
