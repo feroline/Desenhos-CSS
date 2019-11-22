@@ -17,6 +17,12 @@
     position: absolute;
 }
 
+.caroco1,.caroco3,
+.caroco4,.caroco6,
+.caroco8,.caroco10 {
+    border-left: 5px solid darkorchid ;
+}
+
 .caroco1 {
     width: 140px;
     height: 140px;
@@ -112,21 +118,58 @@
     left: 90px;
 }
 
-.caroco1:before {
-    content: "";
-    width:35px;
-    height: 35px;
-    background-color: black;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 20px;
+.estrela{
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right: 25px solid transparent;
+    border-bottom: 20px solid yellow;
+    border-left: 29px solid  transparent;
+    transform: rotate(-108deg);
+    position: relative;
+    left: 43px;
+    top: 35px;
+    /* right: 10px; */
 }
-.caroco1::after {
+
+.estrela:before {
     content: "";
-    width:45px;
-    height: 45px;
-    background-color: yellow;
-    transform: rotate(45deg);
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right: 25px solid transparent;
+    border-bottom: 20px solid yellow;
+    border-left: 18px solid transparent;
     position: absolute;
-    top: 20px;
+    right: -18px;
+    bottom: -20px;
+    transform: rotate(-74deg);
+}
+
+.estrela:after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right: 25px solid transparent;
+    border-bottom: 20px solid yellow;
+    border-left: 20px solid transparent;
+    position: absolute;
+    right: -17px;
+    bottom: -20px;
+    transform: rotate(-145deg);
+}
+
+.princesaCaroco:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 10px;
+    /* border-top: 10px solid transparent; */
+    /* border-bottom: 10px solid black; */
+    border-radius: 50%;
+    background-color: black ;
+    position: absolute;
+    top: 70px;
+    right: 85px;
 }
