@@ -1,10 +1,28 @@
+#movimento {
+    width: 400px;
+    height: 400px;
+}
+
 .princesaCaroco {
+    height: 220px;
+    /*margin: 200px;*/
     width: 200px;
-    height: 200px;
-    margin: 200px;
     background-color: violet;
     border-radius: 50%;
     position: relative;
+    animation-duration: 3s;
+    animation-name: princesa;
+    animation-iteration-count: infinite;
+    animation-direction: reverse ;
+}
+
+@keyframes princesa {
+    0% {
+        margin-top: 200px;
+    }
+    60%{
+        margin-top: 220px;
+    }
 }
 
 .caroco1, .caroco2,
@@ -15,6 +33,40 @@
     background-color: violet;
     border-radius: 50%;
     position: absolute;
+    animation-name:carocos;
+    animation-duration: 3s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes carocos {
+    0% {
+        margin-top: 0px;
+    }
+    10%{
+        margin-top: 3px;
+    }
+}
+
+.caroco1, .caroco2,
+.caroco3, .caroco4,
+.caroco5, .caroco6,
+.caroco7, .caroco8,
+.caroco9, .caroco10 {
+    animation-name:base;
+    animation-duration: 3s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes base {
+    0% {
+        margin-top: 0px;
+    }
+    10%{
+        margin-top: 12px;
+        /*background-color: red;*/
+    }
 }
 
 .caroco1,.caroco3,
@@ -93,13 +145,6 @@
     right: 65px;
 }
 
-/*.olho1, .olho2 {*/
-/*    width: 10px;*/
-/*    height: 10px;*/
-/*    background-color: black;*/
-/*    border-radius: 50%;*/
-/*    position: absolute;*/
-/*}*/
 .caroco2:before, .caroco3:before {
     content: "";
     width:10px;
@@ -165,11 +210,66 @@
     display: block;
     width: 30px;
     height: 10px;
-    /* border-top: 10px solid transparent; */
-    /* border-bottom: 10px solid black; */
     border-radius: 50%;
     background-color: black ;
     position: absolute;
     top: 70px;
     right: 85px;
 }
+
+#sombra {
+    width: 220px;
+    height: 100px;
+    background: black;
+    border-radius: 50%;
+    margin-top: 70px;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-duration:3s;
+    animation-name: sombra;
+}
+
+#sombra:before {
+    content: "";
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-duration:3s;
+    animation-name: sombraBefore;
+    width: 220px;
+    height: 100px;
+    /*left: 230px;*/
+    left: 240px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+}
+
+@keyframes sombraBefore {
+    0%{
+        left: 240px;
+    }
+    10% {
+        left: 220px;
+        height: 103px ;
+    }
+}
+
+@keyframes sombra {
+    0%{
+
+    }
+    10% {
+        width: 240px;
+        height: 103px ;
+    }
+}
+
+.container{
+    align-content: center;
+    margin: 230px;
+}
+body {
+    background-color: lightskyblue;
+}
+
+
